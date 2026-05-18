@@ -26,23 +26,45 @@
 
         <!-- Computer view Menu links -->
         <div class="nav-links">
-            <li class="menu"><a href="#home">Home</a></li>
+            <li class="menu"><a href="index.html">Home</a></li>
             <li class="menu"><a href="#about">About Us</a></li>
             <li class="menu"><a href="#Actvities">Actvities</a></li>
             <li class="menu"><a href="#gallery">Gallery</a></li>
             <li class="menu"><a href="#members">Members</a></li>
             <li class="menu"><a href="#contact">Contact</a></li>
         </div>
-
-        <div class="donate" id="donate">Donate Now <i class="fas fa-heart"></i></div>
-        <div class="show-menu" id="show-menu"><i class="fas fa-bars"></i></div>
+        <div class="donate" id="donate" onclick="showHide()">Donate Now <i class="fas fa-heart"></i></div>
+        <div class="show-menu" id="show-menu" onclick="showMenu()"><i class="fas fa-bars" onclick="showMenu()"></i></div>
 
     </section>
 
+    <!-- Methods to donate -->
+    <section class="donate-methods" id="methods">
+        <div class="head">
+            You can donate with <i class="fas fa-times" id="close-donate" onclick="showHide()"></i>
+        </div>
+
+        <div class="methods">
+            <ul>
+                <a href="tel:*182*8*1*1391480#"> <img src="mtn.jpg" alt="">MoMo Pay</a>
+            </ul>
+            <ul>
+                <a href="tel:*182*8*1*1391480#"> <img src="mtn.jpg" alt="">MoMo Pay</a>
+            </ul>
+        </div>
+
+        <div class="methods-details">
+            For MoMo Click on the button <p>
+            <p>
+            <ul>  
+                <li>Receiver Name: Eric</li>
+            </ul>
+        </div>
+    </section>
     <!-- Mobile view Menu links -->
-    <section class="menu-mobile">
+    <section class="menu-mobile" id="mobile-menu">
         <div class="mobile-menu">
-            <li class="menu"><a href="#home">Home</a></li>
+            <li class="menu"><a href="index.html">Home</a></li>
             <li class="menu"><a href="#about">About Us</a></li>
             <li class="menu"><a href="#Actvities">Actvities</a></li>
             <li class="menu"><a href="#gallery">Gallery</a></li>
@@ -103,6 +125,8 @@
     <i class="fas fa-camera"></i> -->
 
 
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>

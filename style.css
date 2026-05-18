@@ -15,6 +15,10 @@ html{
     font-family:Arial, Helvetica, sans-serif
 }
 
+body{
+    position: relative;
+}
+
 li{
     list-style: none;
 }
@@ -121,12 +125,98 @@ a{
 .mobile-menu{
     display: none;
 }
+
+/* donate-methids section style */
+
+.donate-methods{
+    padding: 20px 50px;
+    position: relative;
+    animation: slide 1s ease;
+    display: none;
+    background-color: #222;
+    
+    
+}
+
+.donate-methods .head{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 10px;
+
+}
+
+.donate-methods .head i{
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.donate-methods .methods{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin:0 auto;
+    gap: 10px;
+    padding: 30px;
+   
+}
+
+
+
+.donate-methods ul a{
+    display: flex;
+    gap: 10px;
+    color: #D81B60;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: #D81B60 solid 2px;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 5px 10px;
+    justify-content: center;
+    background-color: white;
+
+
+    
+}
+
+.donate-methods ul a:hover{
+    background-color: #E91E63;
+    color: white;
+}
+
+.donate-methods ul img{
+    width: 10%;
+}
+
+.donate-methods .methods-details{
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+.donate-methods .methods-details ul{
+    margin: 0.5rem;
+    
+}
+
+
+
 /* Hero section style */
 
 .hero{
     display: flex;
     justify-content: space-between;
-    
     position: relative;
     height: 35vh;
     background-image: url("1.jpeg");
@@ -266,7 +356,11 @@ a{
 
 
 
-
+@keyframes slide {
+    0% {
+        transform: translateY(90px);
+    }
+}
 @media (max-width:786px){
     .header .nav-links{
         display: none;
@@ -275,6 +369,7 @@ a{
         display: block; 
         font-size: 25px; 
     }
+    
 
     .hero{
         flex-direction: column;
