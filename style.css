@@ -1,0 +1,308 @@
+:root{
+    --primary-color:#E91E63;
+    --secondary-color:#D81B60;
+    --green-color:#4CAF50;
+    --green-hover:#388E3C;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 5%;
+    
+
+}
+
+
+
+.header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    cursor: pointer;
+    
+}
+
+.header .logo i{
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.header .logo li{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header .logo #imbuto{
+    color: var(--primary-color);
+}
+
+.header .logo #love{
+    font-size: xx-small;
+}
+
+
+
+.header .nav-links{
+    display: flex;
+    gap: 10%;
+    list-style: none;
+
+}
+
+.header .nav-links a{
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    
+}
+
+.header .nav-links li{
+    position: relative;
+}
+
+.header .nav-links li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.6vh;
+    left: 0;
+    background-color: #E91E63;
+    top: 30px;
+
+
+}
+
+.header .donate{
+    background-color: var(--secondary-color);
+    padding: 5px 8px;
+    border-radius: 20px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+
+.header .donate:hover{
+    background-color: var(--primary-color);
+}
+
+.show-menu{
+    display:none;
+}
+
+/* Menu links style on mobile */
+.mobile-menu{
+    display: none;
+}
+/* Hero section style */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+    height: 35vh;
+    background-image: url("1.jpeg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.hero .spread{
+    padding: 20px 50px;
+    color: white;
+    position: relative;
+    background: linear-gradient(125deg, #711634,#711634, rgba(0,0,0,0));
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 15%;
+   
+}
+
+.hero .spread .title{
+    font-weight: bolder;
+    position: relative;
+}
+.hero .spread .love{
+    color: var(--primary-color);
+}
+
+.hero .spread .title::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    background-color: antiquewhite;
+    height: 0.2px;
+    top: 40px;
+
+}
+
+.hero .spread .desc{
+    margin-top: 1rem;
+    font-size: small;
+    white-space: wrap;
+}
+
+.hero .spread .content{
+    font-size: x-small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero .spread .spreadButtons{
+    display: flex;
+    width: 100%;
+    gap: 20%;
+    
+    
+}
+
+.hero .spread button{
+    padding: 5px 8px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+    white-space: nowrap;
+
+
+}
+
+.hero .spread #join-us{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.hero .spread #learn-more {
+    color: var(--secondary-color);
+}
+
+.hero .motto{
+    background-color: white;
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    font-family: 'Poppins',
+        sans-serif;;
+}
+
+.hero .motto ul{
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .motto #quote{
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.hero .motto ul::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    background-color: var(--secondary-color);
+    height: 0.3vh;
+    top: 45px;
+    left: 10%;
+    right: 10%;
+    margin:0 auto;
+}
+
+.hero .motto .motto-eng{
+    color: var(--secondary-color);
+    
+}
+
+.hero .motto .motto-kiny{
+    width: 70%;
+    text-align: center;
+}
+
+.hero .motto i{
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+@media (max-width:786px){
+    .header .nav-links{
+        display: none;
+    }
+    .show-menu {
+        display: block; 
+        font-size: 25px; 
+    }
+
+    .hero{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .hero .spread{
+        width: 74.5%;
+    }
+    .hero .spread .content {
+        margin-top: 1rem;
+    }
+    .hero .spread .spreadButtons {
+
+        margin-top: 1rem;  
+     }
+
+    .hero .motto{
+        position: relative;
+        width: 80%;
+        margin:0 auto;
+        margin: 1rem;
+        right: unset;
+    }
+
+    
+}
