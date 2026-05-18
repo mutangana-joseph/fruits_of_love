@@ -34,7 +34,7 @@
             <li class="menu"><a href="#contact">Contact</a></li>
         </div>
         <div class="donate" id="donate" onclick="showHide()">Donate Now <i class="fas fa-heart"></i></div>
-        <div class="show-menu" id="show-menu" onclick="showMenu()"><i class="fas fa-bars" onclick="showMenu()"></i></div>
+        <div class="show-menu" id="show-menu" onclick="showMenu()"><i class="fas fa-bars"></i></div>
 
     </section>
 
@@ -62,15 +62,23 @@
         </div>
     </section>
     <!-- Mobile view Menu links -->
-    <section class="menu-mobile" id="mobile-menu">
-        <div class="mobile-menu">
+    <section class="mobile-menu" id="mobile-menu">
+        <div class="head">
+            <i class="fas fa-times" id="close-menu" onclick="showMenu()"></i>
+            <ul>
+                <i class="far fa-heart"></i>
+                <li class="fruits"> Fruits </li>
+                <li class="love"> Of Love</li>
+            </ul>
+        </div>
+        <ul class="menu-links">
             <li class="menu"><a href="index.html">Home</a></li>
             <li class="menu"><a href="#about">About Us</a></li>
             <li class="menu"><a href="#Actvities">Actvities</a></li>
             <li class="menu"><a href="#gallery">Gallery</a></li>
             <li class="menu"><a href="#members">Members</a></li>
             <li class="menu"><a href="#contact">Contact</a></li>
-        </div>
+        </ul>
     </section>
 
 
