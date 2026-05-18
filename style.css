@@ -129,7 +129,7 @@ a{
 /* Menu links style on mobile */
 .mobile-menu{
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
     animation: showMenu 0.5s ease;
     z-index: 1000;
@@ -184,9 +184,6 @@ a{
 }
 
 
-
-
-
 .mobile-menu .menu-links li a{
     display: block;
     text-align: center;
@@ -205,7 +202,7 @@ a{
     border-bottom: solid var(--secondary-color);
 }
 
-/* donate-methids section style */
+/* donate-methods section style */
 
 .donate-methods{
     padding: 20px 50px;
@@ -231,6 +228,10 @@ a{
 .donate-methods .head i{
     cursor: pointer;
     font-size: 23px;
+}
+
+.donate-methods .head i:hover, .mobile-menu .head i:hover{
+    animation: spin 1s ease-in-out;
 }
 
 .donate-methods .methods{
@@ -292,9 +293,9 @@ a{
 .donate-methods .methods-details ul li{
     background-color: white;
     color: var(--secondary-color);
-    border-radius: 25px;
+    
     padding: 20px 30px;
-    border: var(--secondary-color) solid;
+    border: var(--secondary-color) solid 1px;
 
 }
 
@@ -409,10 +410,7 @@ a{
     text-align: center;
 }
 
-.hero .motto #quote{
-    color: var(--secondary-color);
-    font-weight: bolder;
-}
+
 
 .hero .motto ul::after {
     content: '';
@@ -441,6 +439,123 @@ a{
     color: var(--secondary-color);
 }
 
+.hero .motto ul i {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: small;
+}
+
+/* section links style */
+
+.links-content{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr;
+    gap: 10px;
+    padding: 20px 50px;
+    
+}
+
+.links-content .card{
+    white-space: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 20px;
+    border-right: #2222 1px solid;
+    
+}
+
+.links-content .card:last-child{
+    border-right: unset;
+}
+
+.links-content .card .head{
+    display: flex;
+    gap: 10px;
+    color: var(--green-color);
+    font-weight: bolder;
+    white-space: nowrap;
+
+}
+
+.links-content .card .head li{
+    position: relative;
+}
+
+.links-content .card .head li::after {
+    content: '';
+    position: absolute;
+    background-color: var(--green-color);
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 20px;
+
+}
+
+.links-content .card .details{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 1rem 0;
+}
+
+.links-content .card .details li {
+    white-space: nowrap;
+    padding: 5px;
+}
+.links-content .card .details li i{
+    color: var(--green-color);
+    margin-right: 0.2rem;
+}
+
+.links-content .card button{
+    background-color: var(--green-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 90%;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    
+    white-space: nowrap;
+}
+
+.links-content #gallery .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+   
+}
+
+.links-content #gallery img{
+    width: 90px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.links-content #members .details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.links-content #members .details .row{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.links-content #members img {
+    width: 60px;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
 
 
 
@@ -454,6 +569,12 @@ a{
     0% {
         transform: translateX(-100px);
         opacity: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
     }
 }
 @media (max-width:786px){
@@ -496,6 +617,27 @@ a{
         margin:0 auto;
         margin: 1rem;
         right: unset;
+    }
+
+    .links-content {
+        grid-template-columns: 2fr;
+        gap: 20px;
+       
+        
+    }
+
+    .links-content .card{
+        border-right: unset;
+        border-bottom: 1px solid ;
+       
+    }
+
+    .links-content .card button{
+        margin-bottom: 1rem;
+    }
+
+    .links-content #gallery img{
+        width: 150px;
     }
 
     
