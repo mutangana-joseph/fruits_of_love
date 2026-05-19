@@ -823,7 +823,10 @@ a{
     justify-content: space-between;
     border-bottom: none;
     gap: 50px;
+    text-align: left;
 }
+
+
 
 .footer .content .group .connect{
     display: flex;
