@@ -233,7 +233,7 @@ a{
 .donate-methods .head{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    gap: 5px;
     background-color: var(--secondary-color);
     color: white;
     font-weight: bolder;
@@ -241,12 +241,14 @@ a{
 
 }
 
-.donate-methods .head i{
+.donate-methods .head li i{
+    position: absolute;
+    right: 1rem;
     cursor: pointer;
     font-size: 23px;
 }
 
-.donate-methods .head i:hover, .mobile-menu .head i:hover{
+.donate-methods .head li i:hover, .mobile-menu .head i:hover{
     animation: spin 1s ease-in-out;
 }
 
@@ -472,7 +474,7 @@ a{
 }
 
 .links-content .card{
-    white-space: wrap;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -596,6 +598,41 @@ a{
     object-fit: cover;
 }
 
+/* Statistics Section style */
+
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+
+}
+
+.statistics .group{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.statistics .group i {
+    
+    font-size: 30px;
+}
+.statistics .group .number{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.statistics .group .name {
+   
+    font-size: x-small;
+    white-space: nowrap;
+}
+
 
 
 
@@ -715,10 +752,19 @@ a{
           
     }
 
-        .links-content #members .row ul{
-            padding: 20px;
-            
-        }
+    .links-content #members .row ul{
+        padding: 15px;
+        
+    }
+
+    .statistics{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0 0;
+    }
 
     
 }
