@@ -820,6 +820,9 @@ a{
 .footer .content .group .connect{
     display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
@@ -836,6 +839,10 @@ a{
 .footer .content .group .connect #sociaLinks{
     display: flex;
     gap: 35px;
+}
+
+.copyRight{
+    font-size: x-small;
 }
 
 
@@ -991,11 +998,7 @@ a{
         align-items: center;
     }
 
-    .footer .content .group .connect{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
     
 }
