@@ -44,7 +44,7 @@ a{
 
 
 
-.header .logo{
+.header .logo, .footer .logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,13 +54,13 @@ a{
     
 }
 
-.header .logo i{
+.header .logo i, .footer .logo i{
     font-size: 30px;
     color: var(--secondary-color);
     text-shadow: 1px 3px;
 }
 
-.header .logo li{
+.header .logo li, .footer .logo li{
     text-transform: uppercase;
     font-weight: bolder;
    
@@ -70,7 +70,9 @@ a{
     color: var(--primary-color);
 }
 
-.header .logo #love{
+
+
+.header .logo #love, .footer .logo #love{
     font-size: xx-small;
 }
 
@@ -670,6 +672,8 @@ a{
     padding: 10px 20px;
 }
 
+
+
 .social-links .group, .social-links .motto{
     padding: 20px;
     border-right: 1px solid;
@@ -679,6 +683,10 @@ a{
     gap: 10px;
     flex-direction: column;
     
+}
+
+.social-links .motto{
+    border: none;
 }
 
 .social-links .group .contacts{
@@ -694,15 +702,16 @@ a{
     flex-direction: column;
 }
 
-.social-links .group ul li{
+.social-links .group ul li a{
     display: flex;
     gap: 10px;
     
 }
 
-.social-links .group ul li i{
+.social-links .group ul li a i{
     color: var(--primary-color);
     font-weight: bolder;
+    font-size: 20px;
 }
 
 .social-links .group ul li #whatsApp{
@@ -750,8 +759,84 @@ a{
 }
 
 
+/* fotter style */
 
+.footer{
+    position: relative;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   gap: 10px;
+   color: white;
+    
+}
 
+.footer .logo i{
+    color: white;
+    text-shadow: unset;
+    font-size: 40px;
+}
+
+.footer .logo #imbuto {
+    color: white;
+    font-size: large;
+}
+
+.footer .logo #love {
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.footer .content{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid ivory;
+    padding: 10px 0px;
+    color: white;
+    
+}
+
+.footer h1{
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.footer .content .group a{
+    color: white;
+    font-size: smaller;
+}
+
+.footer .content .group .links{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    gap: 50px;
+}
+
+.footer .content .group .connect{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer .connect .group ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .content .group .connect ul{
+    display: flex;
+    gap: 10px;
+}
+
+.footer .content .group .connect #sociaLinks{
+    display: flex;
+    gap: 35px;
+}
 
 
 
@@ -898,6 +983,18 @@ a{
 
     .social-links .motto {
         border: unset;
+    }
+    .footer .content {
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .content .group .connect{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
