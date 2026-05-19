@@ -824,7 +824,10 @@ a{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    
 }
+
+
 
 .footer .connect .group ul{
     display: flex;
@@ -836,6 +839,9 @@ a{
     gap: 10px;
 }
 
+.footer .content .group .connect ul i{
+    font-size: 13px;
+}
 .footer .content .group .connect #sociaLinks{
     display: flex;
     gap: 35px;
