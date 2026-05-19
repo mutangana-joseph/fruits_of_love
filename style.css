@@ -136,12 +136,21 @@ a{
     top: 0;
     background-color: white;
     height: 100vh;
+    background-image: url('5.jpeg');
+    background-position: center;
+    background-size: cover;
     
 
 }
 
+.mobile-menu .content{
+    background-color: rgba(255, 255, 255, 0.76);
+    height: 100vh;
+}
+
 .mobile-menu .head{
-    padding: 20px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.826);
     display: flex;
     justify-content: space-between;
 }
@@ -154,7 +163,8 @@ a{
     color: #D81B60;
     font-weight: bolder;
     cursor: pointer;
-    text-shadow: 2px 0px;
+    text-shadow: 1px 0px;
+    font-size: larger;
 }
 
 .mobile-menu .head i{
@@ -178,8 +188,9 @@ a{
     display: inline;
     border-top: solid var(--secondary-color);
     width: 95%;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
+    font-size: larger;
     
 }
 
@@ -189,6 +200,8 @@ a{
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: larger;
+    font-weight: bolder;
     
     
 }
@@ -293,7 +306,7 @@ a{
 .donate-methods .methods-details ul li{
     background-color: white;
     color: var(--secondary-color);
-    
+    white-space: nowrap;
     padding: 20px 30px;
     border: var(--secondary-color) solid 1px;
 
@@ -451,7 +464,7 @@ a{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 3fr;
     gap: 10px;
-    padding: 20px 50px;
+    padding: 10px;
     
 }
 
@@ -513,7 +526,7 @@ a{
     color: white;
     border: none;
     border-radius: 25px;
-    width: 90%;
+    width: 50%;
     padding: 6px 10px;
     cursor: pointer;
     font-weight: bold;
@@ -529,7 +542,7 @@ a{
 }
 
 .links-content #gallery img{
-    width: 90px;
+    width: 100px;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 15px;
@@ -539,7 +552,7 @@ a{
 .links-content #members .details {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     grid-template-columns: repeat(6, 1fr);
 }
 .links-content #members .details .row{
@@ -596,12 +609,13 @@ a{
         height: auto;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 98%;
+        position: relative;
 
     }
 
     .hero .spread{
-        width: 74.5%;
+        width: 76%;
     }
     .hero .spread .content {
         margin-top: 1rem;
@@ -620,8 +634,12 @@ a{
     }
 
     .links-content {
-        grid-template-columns: 2fr;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
        
         
     }
@@ -629,7 +647,18 @@ a{
     .links-content .card{
         border-right: unset;
         border-bottom: 1px solid ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
        
+    }
+    .links-content .card:last-child{
+        border-bottom: unset;
+
+    }
+
+    .links-content .card .details{
+        padding: 20px;
     }
 
     .links-content .card button{
@@ -637,7 +666,7 @@ a{
     }
 
     .links-content #gallery img{
-        width: 150px;
+        width: 90px;
     }
 
     
