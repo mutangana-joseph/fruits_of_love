@@ -146,6 +146,8 @@ a{
 .mobile-menu .content{
     background-color: rgba(255, 255, 255, 0.76);
     height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .mobile-menu .head{
@@ -179,6 +181,7 @@ a{
     
     justify-content: center;
     align-items: center;
+    
     width: 100%;
 }
 
@@ -187,8 +190,7 @@ a{
     align-items: center;
     display: inline;
     border-top: solid var(--secondary-color);
-    width: 95%;
-    padding: 30px;
+    width: 100%;
     text-align: center;
     font-size: larger;
     
@@ -200,6 +202,7 @@ a{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px;
     font-size: larger;
     font-weight: bolder;
     
@@ -210,10 +213,6 @@ a{
     color: white;
 }
 
-.mobile-menu .menu-links li:last-child {
-    border-radius: 0 0 20px 20px;
-    border-bottom: solid var(--secondary-color);
-}
 
 /* donate-methods section style */
 
