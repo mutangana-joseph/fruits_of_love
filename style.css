@@ -498,7 +498,7 @@ a{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 3fr;
     gap: 10px;
-    padding: 10px;
+    padding: 30px 20px;
     
 }
 
@@ -513,6 +513,8 @@ a{
     border-right: #2222 1px solid;
     
 }
+
+
 
 .links-content .card:last-child{
     border-right: unset;
@@ -545,9 +547,15 @@ a{
 .links-content .card .details{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    
     margin: 1rem 0;
     
     
+}
+
+.links-content .card #aboutD{
+    
+   text-align: center;
 }
 
 .links-content .card .details li {
