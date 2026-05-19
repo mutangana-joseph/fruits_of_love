@@ -26,12 +26,12 @@
 
         <!-- Computer view Menu links -->
         <div class="nav-links">
-            <li class="menu"><a href="index.html">Home</a></li>
-            <li class="menu"><a href="#about">About Us</a></li>
-            <li class="menu"><a href="#Actvities">Actvities</a></li>
-            <li class="menu"><a href="#gallery">Gallery</a></li>
-            <li class="menu"><a href="#members">Members</a></li>
-            <li class="menu"><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="pc-menu" id="home">Home</a></li>
+            <li><a href="#about" class="pc-menu">About Us</a></li>
+            <li ><a href="#activities" class="pc-menu">Activities</a></li>
+            <li ><a href="#gallery" class="pc-menu">Gallery</a></li>
+            <li ><a href="#members" class="pc-menu">Members</a></li>
+            <li ><a href="#contact" class="pc-menu">Contact</a></li>
         </div>
         <div class="donate" id="donate" onclick="showHide()">Donate Now <i class="fas fa-heart"></i></div>
         <div class="show-menu" id="show-menu" onclick="showMenu()"><i class="fas fa-bars"></i></div>
@@ -85,10 +85,11 @@
         <ul class="menu-links">
             <li class="menu"><a href="index.html">Home</a></li>
             <li class="menu"><a href="#about">About Us</a></li>
-            <li class="menu"><a href="#Actvities">Actvities</a></li>
+            <li class="menu"><a href="#activities">Activities</a></li>
             <li class="menu"><a href="#gallery">Gallery</a></li>
             <li class="menu"><a href="#members">Members</a></li>
             <li class="menu"><a href="#contact">Contact</a></li>
+            <li onclick="showHide()"><a href="#methods">Donate <i class="far fa-heart"></i></a></li>
         </ul>
     </div>
     </section>
@@ -149,7 +150,7 @@
             <button>Read More</button>
         </div>
 
-        <div class="card" id="actvities">
+        <div class="card" id="activities">
             <div class="head">
                 <i class="fas fa-tree"></i>
                 <li>Our Activities</li>
@@ -246,8 +247,8 @@
             <div class="contacts" id="contact">
                 <i class="fas fa-phone"></i>
                 <ul>
-                    <a href="tel:078695170">078 695 170</a>
-                    <a href="tel:0795450568">079 545 068</a>
+                    <a href="tel:0786951706">+250 786 951 706</a>
+                    <a href="tel:0795450568">+250 795 450 568</a>
                 </ul>
             </div>
         </div>
@@ -257,7 +258,7 @@
             <ul>
                 <li><i class="fab fa-instagram"></i><a href="https://www.instgram.com/@fruitsoflove2023">Instagram: fruitsoflove2023</a></li>
                 <li><i class="fab fa-youtube"></i><a href="https://www.youtube.com/@fruitsoflove">Youtube: fruits of love</a></li>
-                <li><i class="fab fa-whatsapp"></i><a href="https://chat.whatsapp.com/EofLzKWRf026juSEEGPGXr">WhatsApp: fruits of love</a></li>
+                <li><i class="fab fa-whatsapp" id="whatsApp"></i><a href="https://wa.me/0780920096">WhatsApp: fruits of love</a></li>
             </ul>
         </div>
 
@@ -280,6 +281,8 @@
         </div>
 
      </section>
+
+
     <!-- <i class="far fa-circle-check"></i>
     <i class="fas fa-users"></i>
     <i class="fas fa-heart"></i>

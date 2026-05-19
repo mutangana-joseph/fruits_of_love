@@ -12,7 +12,7 @@ html{
 *{
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -50,6 +50,7 @@ a{
     align-items: center;
     gap: 5%;
     cursor: pointer;
+    font-weight: bolder;
     
 }
 
@@ -62,7 +63,7 @@ a{
 .header .logo li{
     text-transform: uppercase;
     font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 }
 
 .header .logo #imbuto{
@@ -86,14 +87,26 @@ a{
     text-decoration: none;
     color: black;
     white-space: nowrap;
+    font-weight: bolder;
     
+}
+
+.header .nav-links #home{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.header .nav-links a:active {
+   color: var(--secondary-color);
+   
+
 }
 
 .header .nav-links li{
     position: relative;
 }
 
-.header .nav-links li::after{
+/* .header .nav-links li::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -103,7 +116,7 @@ a{
     top: 30px;
 
 
-}
+} */
 
 .header .donate{
     background-color: var(--secondary-color);
@@ -113,6 +126,7 @@ a{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
     white-space: nowrap;
+    font-weight: bolder;
 
 }
 
@@ -174,6 +188,9 @@ a{
     cursor: pointer;
     text-shadow: 1px 3px var(--primary-color);
 }
+.mobile-menu .head #close-menu{
+    font-size: 50px;
+}
 
 .mobile-menu .menu-links{
     display: flex;
@@ -207,6 +224,10 @@ a{
     font-weight: bolder;
     
     
+}
+
+.mobile-menu .menu-links li a i{
+    color: var(--primary-color);
 }
 .mobile-menu .menu-links li:hover{
     background-color: var(--secondary-color);
@@ -387,6 +408,7 @@ a{
     border: none;
     font-weight: bolder;
     white-space: nowrap;
+    cursor: pointer;
 
 
 }
@@ -411,11 +433,11 @@ a{
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    padding: 10px;
-    font-weight: bolder;
+    padding: 15px;
     font-family: 'Poppins',
         sans-serif;;
 }
+
 
 .hero .motto ul, .social-links .motto ul{
     margin-bottom: 1rem;
@@ -426,6 +448,7 @@ a{
     align-items: center;
     text-align: center;
     white-space: nowrap;
+    font-weight: bolder;
 }
 
 
@@ -445,6 +468,7 @@ a{
 .hero .motto .motto-eng, .social-links .motto .motto-eng{
     color: var(--secondary-color);
     white-space: nowrap;
+    font-weight: bolder;
     
     
 }
@@ -452,6 +476,7 @@ a{
 .hero .motto .motto-kiny, .social-links .motto .motto-kiny{
     width: 70%;
     text-align: center;
+    font-weight: bolder;
 }
 
 .hero .motto i, .social-links .motto i{
@@ -677,6 +702,11 @@ a{
 
 .social-links .group ul li i{
     color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.social-links .group ul li #whatsApp{
+    color: var(--green-color);
 }
 
 .social-links .group .contacts ul{
@@ -692,16 +722,19 @@ a{
     position: relative;
     font-weight: bolder;
     font-size: large;
+    margin: 30px 0;
 }
 
 .social-links .group h1::after{
     content: '';
     position: absolute;
-    width: 100%;
+    width: 50%;
+    right: 0;
     height: 1px;
     background-color: var(--primary-color);
     left: 0;
-    bottom: 0;
+    margin: 0 auto;
+    bottom: -0.7rem;
 }
 
 .social-links .group .contacts i{

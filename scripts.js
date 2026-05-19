@@ -3,6 +3,8 @@ const methods = document.getElementById('methods');
 const show_menu = document.getElementById('show-menu');
 const close_menu = document.getElementById('close-menu');
 const mobile_menu = document.getElementById('mobile-menu');
+const menu = document.querySelectorAll('.menu');
+const pcMenu = document.querySelectorAll('.pc-menu');
 
 //Show and hide Mobile menu function
 function showMenu(){
@@ -34,4 +36,26 @@ function showHide(){
    
 }
 
+//hide mobile menu when one link clicked
+menu.forEach(function(member){
+    member.addEventListener('click', function(){
+        mobile_menu.style.display='none';
+    });
+});
+
+
+//put undeline on Computer menu links view when one link clicked
+pcMenu.forEach((member) =>{
+    member.addEventListener('click', function(){
+
+        pcMenu.forEach((item) =>{
+            item.style.color ='black';
+            item.style.textDecoration = 'none';
+        })
+        
+        member.style.color = '#E91E63';
+        member.style.textDecoration='underline';
+        
+    });
+})
 
