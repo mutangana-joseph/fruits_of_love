@@ -167,10 +167,12 @@ a{
 }
 
 .mobile-menu .head{
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.826);
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .mobile-menu .head ul{
@@ -188,6 +190,7 @@ a{
 .mobile-menu .head i{
     font-size: 30px;
     cursor: pointer;
+    
     text-shadow: 1px 3px var(--primary-color);
 }
 .mobile-menu .head #close-menu{
