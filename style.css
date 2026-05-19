@@ -219,9 +219,12 @@ a{
 
 .donate-methods{
     padding: 20px 50px;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
     animation: slide 1s ease;
     display: none;
+    width: 95%;
     background-color: #222;
     
     
@@ -622,6 +625,11 @@ a{
     .show-menu {
         display: block; 
         font-size: 25px; 
+    }
+
+    .donate-methods{
+        width: 75%;
+        
     }
 
     .donate-methods .methods{
