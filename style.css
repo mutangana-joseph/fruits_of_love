@@ -156,7 +156,7 @@ a{
 }
 
 .mobile-menu .head{
-    padding: 30px;
+    padding:10px 30px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -179,8 +179,11 @@ a{
 .mobile-menu .head i{
     font-size: 30px;
     cursor: pointer;
-    
-    text-shadow: 1px 3px var(--primary-color);
+    text-shadow: 1px 3px black;
+}
+.mobile-menu .head ul i{
+    text-shadow: 1px 2px var(--primary-color);
+
 }
 .mobile-menu .head #close-menu{
     font-size: 50px;
