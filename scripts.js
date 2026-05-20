@@ -5,6 +5,7 @@ const close_menu = document.getElementById('close-menu');
 const mobile_menu = document.getElementById('mobile-menu');
 const menu = document.querySelectorAll('.menu');
 const pcMenu = document.querySelectorAll('.pc-menu');
+const joinCard = document.getElementById('joinCard');
 
 //Show and hide Mobile menu function
 function showMenu(){
@@ -59,3 +60,14 @@ pcMenu.forEach((member) =>{
     });
 })
 
+
+//function to show join card
+
+function showJoinCard(){
+    if (joinCard.style.display === 'none' || joinCard.style.display === ''){
+        joinCard.style.display= 'flex';
+    }
+    else{
+        joinCard.style.display = 'none';
+    }
+}

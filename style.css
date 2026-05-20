@@ -262,8 +262,8 @@ a{
     font-size: 23px;
 }
 
-.donate-methods .head li i:hover, .mobile-menu .head i:hover{
-    animation: spin 1s ease-in-out;
+.donate-methods .head li i:hover, .mobile-menu .head i:hover, .joinUs .head i:hover{
+    animation: spin 2s ease-in-out;
 }
 
 .donate-methods .methods{
@@ -620,7 +620,6 @@ a{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bolder;
-    
     box-shadow:0 6px 12px rgb(202, 199, 199);
     padding: 20px;
 
@@ -868,6 +867,75 @@ a{
     font-size: x-small;
 }
 
+.joinUs{
+    position: fixed;
+    bottom: 0;
+    z-index: 8;
+    background-color: #222;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide 1.5s ease-in-out;
+
+    
+}
+
+.joinUs .head{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding: 10px;
+    margin:0 20px;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.joinUs .head i{
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 40px;
+
+}
+
+
+
+.joinUs ul{
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.joinUs ul li{
+    box-shadow: 0 4px 20px var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.joinUs ul li a{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.joinUs ul li a i{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.joinUs ul li a #whatsappIcon {
+    
+    color: var(--green-color);
+}
 
 
 @keyframes slide {
@@ -1006,7 +1074,10 @@ a{
         align-items: center;
     }
 
-    
-
+    .joinUs ul{
+        flex-direction: column;
+        
+        
+    }
     
 }
