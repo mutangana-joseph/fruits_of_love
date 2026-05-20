@@ -340,7 +340,7 @@ a{
     justify-content: space-between;
     position: relative;
     height: 35vh;
-    background-image: url("1.jpeg");
+    background-image: url("6.jpg");
     background-size: cover;
     background-position: center;
     
@@ -417,7 +417,7 @@ a{
 }
 
 .hero .motto{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.619);
     width: 20%;
     position: absolute;
     right: 10%;
@@ -1065,9 +1065,9 @@ a{
        
     }
 
-        .social-links .group:first-child{
-            border: unset;
-        }
+    .social-links .group:first-child{
+        border: unset;
+    }
 
     .social-links .motto {
         border-bottom: 0.5px solid;

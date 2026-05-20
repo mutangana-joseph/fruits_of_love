@@ -28,6 +28,7 @@ function showHide(){
         if (methods.style.display === 'none' || methods.style.display === '') {
             methods.style.display = 'block';
             mobile_menu.style.display = 'none';
+            joinCard.style.display = 'none';
         }
         else {
             methods.style.display = 'none';
@@ -66,6 +67,7 @@ pcMenu.forEach((member) =>{
 function showJoinCard(){
     if (joinCard.style.display === 'none' || joinCard.style.display === ''){
         joinCard.style.display= 'flex';
+        methods.style.display = 'none';
     }
     else{
         joinCard.style.display = 'none';
