@@ -517,6 +517,7 @@ a{
     gap: 10px;
     color: var(--green-color);
     font-weight: bolder;
+    font-size: x-large;
     white-space: nowrap;
 
 }
@@ -532,7 +533,7 @@ a{
     height: 1px;
     width: 100%;
     left: 0;
-    top: 20px;
+    top: 30px;
 
 }
 
@@ -957,6 +958,10 @@ a{
     }
 }
 @media (max-width:786px){
+    .header .logo{
+        margin-right: 1rem;
+        margin-left: -1.5rem;
+    }
     .header .nav-links{
         display: none;
     }
