@@ -975,7 +975,7 @@ a{
 }
 
 .joinUs ul li{
-    box-shadow: 0 4px 20px var(--primary-color);
+   
     padding: 5px 10px;
     border-radius: 20px;
 }
