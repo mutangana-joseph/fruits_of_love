@@ -48,7 +48,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 1px;
     cursor: pointer;
     font-weight: bolder;
     
@@ -57,7 +57,7 @@ a{
 .header .logo i, .footer .logo i{
     font-size: 30px;
     color: var(--secondary-color);
-    text-shadow: 1px 3px;
+    text-shadow: 1px 1px;
 }
 
 .header .logo li, .footer .logo li{
@@ -108,17 +108,6 @@ a{
     position: relative;
 }
 
-/* .header .nav-links li::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 0.6vh;
-    left: 0;
-    background-color: #E91E63;
-    top: 30px;
-
-
-} */
 
 .header .donate{
     background-color: var(--secondary-color);
@@ -499,7 +488,7 @@ a{
 
 .links-content{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 3fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 30px 20px;
     
@@ -514,7 +503,7 @@ a{
     gap: 10px;
     padding-right: 20px;
     border-right: #2222 1px solid;
-    
+    position: relative;
 }
 
 
@@ -570,12 +559,12 @@ a{
     margin-right: 0.2rem;
 }
 
-.links-content .card button{
+.links-content .card a button{
     background-color: var(--green-color);
     color: white;
     border: none;
     border-radius: 25px;
-    width: 60%;
+    width: 100%;
     padding: 6px 10px;
     cursor: pointer;
     font-weight: bold;
@@ -602,29 +591,39 @@ a{
     aspect-ratio: 1/1;   
 }
 
-.links-content #members .details {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    grid-template-columns: repeat(6, 1fr);
+.links-content #members{
+    position: relative;
+    
 }
-.links-content #members .row{
+
+.links-content  .row{
     display: flex;
-    gap: 5px;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    width: 200px;
+    
+    
+
    
 }
 
-.links-content #members .row ul{
+.links-content .row ul{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0;
-    padding: 30px;
-
-    background-color: #2222;
     border-radius: 5px;
+    cursor: pointer;
     font-weight: bolder;
+    
+    box-shadow:0 6px 12px rgb(202, 199, 199);
+    padding: 20px;
+
    
 }
 
@@ -635,8 +634,8 @@ a{
 }
 
 .links-content #members img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -652,7 +651,7 @@ a{
     background-color: var(--primary-color);
     color: white;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 40px 30px;
 
 }
 
@@ -968,26 +967,13 @@ a{
     .links-content .card button{
         margin-bottom: 1rem;
     }
+    .links-content .row{
+        width: 100%;
+    }
 
     
 
-    .links-content #members .row {
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        gap: 5px;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-          
-    }
-
-    .links-content #members .row ul{
-        padding: 15px;
-        
-    }
+   
 
     .statistics{
         display: grid;
