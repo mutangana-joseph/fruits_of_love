@@ -1053,8 +1053,9 @@ a{
     }
 
     .social-links{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column-reverse;
+       
         
     }
 
@@ -1064,8 +1065,13 @@ a{
        
     }
 
+        .social-links .group:first-child{
+            border: unset;
+        }
+
     .social-links .motto {
-        border: unset;
+        border-bottom: 0.5px solid;
+        
     }
     .footer .content {
         gap: 50px;
