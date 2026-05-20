@@ -980,6 +980,23 @@ a{
     border-radius: 20px;
 }
 
+.whatsapp{
+    background-color: green;
+    
+}
+
+.instagram {
+    background: linear-gradient(45deg,#962fbf,#4f5bd5,#d62976,#fa7e1e,
+            #feda75
+            
+            
+            ); 
+}
+
+.youtube{
+    background-color: red;
+}
+            
 .joinUs ul li a{
     white-space: nowrap;
     display: flex;
@@ -990,13 +1007,9 @@ a{
 
 .joinUs ul li a i{
     font-size: 30px;
-    color: var(--primary-color);
+    
 }
 
-.joinUs ul li a #whatsappIcon {
-    
-    color: var(--green-color);
-}
 
 
 @keyframes slide {
