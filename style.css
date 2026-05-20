@@ -480,8 +480,8 @@ a{
     content: '';
     position: absolute;
     width: 50%;
-    background-color: white;
-    height: 0.3vh;
+    background-color: var(--primary-color);
+    height: 1vh;
     top: 55px;
     left: 10%;
     right: 10%;
@@ -489,9 +489,11 @@ a{
 }
 
 .hero .motto .motto-eng, .social-links .motto .motto-eng{
-    color: white;
+    color: var(--primary-color);
     white-space: nowrap;
     font-weight: bolder;
+    font-size: x-large;
+    color: aliceblue;
     
     
 }
@@ -505,13 +507,12 @@ a{
 
 .hero .motto i, .social-links .motto i{
     font-size: 50px;
-    color: white;
+    color: var(--primary-color);
 }
 
 .hero .motto ul i {
-    color: white;
     font-weight: bolder;
-    font-size: small;
+    font-size: xx-large;
 }
 
 /* section links style */
@@ -521,6 +522,7 @@ a{
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 30px 20px;
+    align-items: stretch;
     
 }
 
@@ -531,6 +533,7 @@ a{
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    height: 100%;
     padding-right: 20px;
     border-right: #2222 1px solid;
     position: relative;
@@ -607,6 +610,8 @@ a{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5px;
+    align-items: stretch;
+    width: 100%;
    
 }
 
@@ -624,6 +629,7 @@ a{
 
 .links-content #members{
     position: relative;
+    
     
 }
 
@@ -809,6 +815,7 @@ a{
 .social-links .motto ul::after{
     top: 70px;
     background-color: var(--primary-color);
+    height: 1px;
 }
 
 .social-links .motto .motto-eng{
@@ -1031,16 +1038,12 @@ a{
     .hero{
         flex-direction: column;
         height: auto;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+        
 
     }
 
    
-    .hero .spread .content {
-        margin-top: 1rem;
-    }
+   
     .hero .spread .spreadButtons {
 
         margin-top: 1rem;  
