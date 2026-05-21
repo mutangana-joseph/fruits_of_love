@@ -12,6 +12,7 @@ function showMenu(){
 
     if (mobile_menu.style.display === 'none' ||mobile_menu.style.display === ''){
         mobile_menu.style.display = 'block';
+
     }
     else{
         mobile_menu.style.display = 'none';
@@ -42,6 +43,8 @@ function showHide(){
 menu.forEach(function(member){
     member.addEventListener('click', function(){
         mobile_menu.style.display='none';
+        joinCard.style.display = 'none';
+        methods.style.display = 'none';
     });
 });
 
