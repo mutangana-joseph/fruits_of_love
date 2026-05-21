@@ -288,6 +288,9 @@ a{
     align-items: stretch;
     gap: 30px;
     padding: 20px 30px;
+    height: 30vh;
+    scrollbar-width: none;
+    overflow-y: scroll;
     
    
 }
@@ -643,6 +646,8 @@ a{
     object-fit: cover;
     border-radius: 10px;  
     aspect-ratio: 1/1;   
+    
+    
 }
 
 .links-content #members{
@@ -667,15 +672,7 @@ a{
    
 }
 
-@keyframes moveSide {
-    from {
-        transform: translateX(0%);
-    }
 
-    to {
-        transform: translateX(-100%);
-    }
-}
 .links-content .row ul{
     
     display: flex;
@@ -688,14 +685,14 @@ a{
     font-weight: bolder;
     box-shadow:0 6px 12px rgb(202, 199, 199);
     padding: 20px;
-    animation: moveSide 20s linear infinite;
+    animation: moveSide 10s linear infinite;
 
    
 }
 
-.links-content #members .row ul .name{
-
-    white-space: wrap;
+.links-content #members .row ul .name, .links-content #members .row ul .role{
+    font-size: small;
+    white-space: nowrap;
     
 }
 
@@ -705,6 +702,8 @@ a{
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    border: 2px solid var(--green-color);
+    padding: 2px;
 }
 
 /* Statistics Section style */
@@ -1085,6 +1084,19 @@ a{
         transform: rotate(360deg);
     }
 }
+
+
+@keyframes moveSide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
 @media (max-width:786px){
     .header .logo{
         margin-right: 1rem;
