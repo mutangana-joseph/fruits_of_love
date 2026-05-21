@@ -79,8 +79,9 @@ a{
 
 
 .header .nav-links{
+    
     display: flex;
-    gap: 10%;
+    gap: 20px;
     list-style: none;
 
 }
@@ -118,6 +119,7 @@ a{
     cursor: pointer;
     white-space: nowrap;
     font-weight: bolder;
+    position: relative;
     gap: 5px;
     
 
@@ -152,7 +154,7 @@ a{
 }
 
 .mobile-menu .content{
-    background-color: rgba(255, 255, 255, 0.76);
+    background-color: rgba(1,0.5, 0.5,0.5);
     height: 100vh;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -264,14 +266,16 @@ a{
     color: white;
     font-weight: bolder;
     padding: 10px 10px;
+    font-size: 22px;
 
 }
+
 
 .donate-methods .head li i{
     position: absolute;
     right: 1rem;
     cursor: pointer;
-    font-size: 23px;
+    font-size: 33px;
 }
 
 .donate-methods .head li i:hover, .mobile-menu .head i:hover, .joinUs .head i:hover{
@@ -521,7 +525,7 @@ a{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 0px 20px;
+    padding: 30px 20px;
     align-items: stretch;
     
 }
@@ -629,11 +633,12 @@ a{
 
 .links-content #members{
     position: relative;
+   
     
     
 }
 
-.links-content  .row{
+.links-content  .row {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -641,12 +646,22 @@ a{
     scrollbar-width: thin;
     scroll-behavior: smooth;
     width: 200px;
+   
     
     
 
    
 }
 
+@keyframes moveSide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
 .links-content .row ul{
     
     display: flex;
@@ -659,6 +674,7 @@ a{
     font-weight: bolder;
     box-shadow:0 6px 12px rgb(202, 199, 199);
     padding: 20px;
+    animation: moveSide 20s linear infinite;
 
    
 }
@@ -746,6 +762,8 @@ a{
     align-items: center;
 }
 
+
+
 .social-links .group ul{
     display: flex;
     gap: 30px;
@@ -800,6 +818,19 @@ a{
    color: var(--secondary-color);
    font-size: 30px;
 
+}
+
+.social-links .group .contacts ul a{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links .group .contacts ul a i{
+    font-size: 15px;
+    color: #388E3C;
+    font-size: 20px;
+    color: var(--primary-color);
 }
 
 
@@ -939,10 +970,10 @@ a{
 }
 
 .joinUs .head{
+    position: relative;
     background-color: white;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     justify-content: center;
     align-items: center;
     font-size: x-large;
@@ -952,9 +983,13 @@ a{
     font-weight: bolder;
 }
 
-.joinUs .head i{
-    position: absolute;
-    right: 1rem;
+.joinUs .head li{
+    margin-left: 3rem;
+}
+
+.joinUs .head #closeCard{
+    margin-left: auto;
+    margin-right: 3rem;
     cursor: pointer;
     font-size: 40px;
     color: #222;
@@ -964,7 +999,9 @@ a{
 .joinUs .head  li i{
     position: relative;
     color: var(--primary-color);
+    margin-right: auto;
 }
+
 
 
 .joinUs ul{
@@ -975,7 +1012,7 @@ a{
 }
 
 .joinUs ul li{
-   
+    
     padding: 5px 10px;
     border-radius: 20px;
 }
@@ -995,6 +1032,10 @@ a{
 
 .youtube{
     background-color: red;
+}
+
+.tiktok{
+    background: linear-gradient(45deg,aqua, black,black,red, white);
 }
             
 .joinUs ul li a{
@@ -1140,9 +1181,15 @@ a{
     }
 
     .joinUs ul{
-        flex-direction: column;
-        
-        
+        flex-direction: column;  
+    }
+
+    .joinUs .head #closeCard{
+        margin-right: 1rem;
+    }
+
+    .joinUs .head li{
+        margin-left: 1rem;
     }
     
 }
