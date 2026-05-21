@@ -282,44 +282,59 @@ a{
 }
 
 .donate-methods .methods{
-
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    margin:0 auto;
-    gap: 10px;
-    padding: 30px;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px 30px;
+    
    
 }
 
-
-
-.donate-methods .methods ul a li{
+.donate-methods .methods .account{
+    padding: 6px;
+    border-radius: 20px;
     display: flex;
-    gap: 5px;
-    color: #D81B60;
-    border-radius: 25px;
-    font-weight: bolder;
-    border: #D81B60 solid 2px;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    white-space: nowrap;
-    padding: 5px 30px;
     justify-content: center;
-    background-color: white;
+    text-align: left;
+    box-shadow: 0 1px 8px var(--primary-color);
+    width: 100%;
+    cursor: pointer;
+   
+}
 
+.donate-methods .methods #momo{
+    display: inline-block;
+    padding: unset;
+    padding: 6px;
+}
 
+.donate-methods .methods #momo a:hover{
+    background-color: rgba(255, 217, 0, 0.553);
+}
+
+.donate-methods .methods #momo a{
+    display: block;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
     
 }
 
-.donate-methods .methods ul a li:hover{
-    background-color: #E91E63;
-    color: white;
-    border: white solid;
+.donate-methods .methods #lolc{
+    background-color: aqua;
+    font-weight: bolder;
 }
 
-.donate-methods ul img{
-    width: 50px;
+.donate-methods .methods #lolc:hover{
+    background-color: rgba(0, 255, 255, 0.747);
 }
 
 .donate-methods .methods-details{
