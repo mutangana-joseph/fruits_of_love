@@ -541,22 +541,24 @@ a{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    justify-content: center;
     padding: 30px 20px;
     align-items: stretch;
+   
     
 }
 
 .links-content .card{
     
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    height: 100%;
     padding-right: 20px;
     border-right: #2222 1px solid;
     position: relative;
+    padding-bottom: 1rem;
+    
 }
 
 
@@ -571,6 +573,7 @@ a{
     color: var(--green-color);
     font-weight: bolder;
     font-size: x-large;
+    height: 50px;
     white-space: nowrap;
 
 }
@@ -613,6 +616,12 @@ a{
     margin-right: 0.2rem;
 }
 
+.links-content .card a{
+    margin-top: auto;
+    margin-right: auto;
+    color: var(--green-color);
+    font-weight: bolder;
+}
 .links-content .card a button{
     background-color: var(--green-color);
     color: white;
@@ -622,22 +631,28 @@ a{
     padding: 6px 10px;
     cursor: pointer;
     font-weight: bold;
-    
     white-space: nowrap;
+}
+
+.links-content .card a button:hover{
+    background-color: var(--green-hover);
 }
 
 .links-content .card .gallery {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 5px;
     align-items: stretch;
-    width: 100%;
+    position: relative;
+   
    
 }
 
 .links-content .card .gallery .big {
     grid-row: span 3;
+   
  }
+
 
  .links-content .card .gallery .item img {
     width: 100%;
@@ -649,8 +664,14 @@ a{
     
 }
 
+.links .card .gallery .big img{
+    height: 100%;
+}
+
 .links-content #members{
     position: relative;
+    
+   
    
     
     
@@ -690,14 +711,20 @@ a{
 }
 
 .links-content #members .row ul .name, .links-content #members .row ul .role{
-    font-size: small;
+    font-size: x-small;
     white-space: nowrap;
     
 }
 
+.links-content #members .row ul .name{
+    font-size: x-small;
+    margin-top: 5%;
+    color: #7c6f6f;
+}
+
 .links-content #members img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -756,7 +783,7 @@ a{
     padding: 20px;
     border-right: 1px solid;
     display: flex;
-    justify-content: center;
+
     align-items: center;
     gap: 10px;
     flex-direction: column;
@@ -812,6 +839,7 @@ a{
     font-weight: bolder;
     font-size: large;
     margin: 30px 0;
+    height: 30px;
 }
 
 .social-links .group h1::after{
@@ -1142,7 +1170,7 @@ a{
 
     .links-content .card{
         border-right: unset;
-        border-bottom: 1px solid ;
+        border-bottom: 1px solid #2222;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -1163,6 +1191,10 @@ a{
     .links-content .row{
         width: 100%;
     }
+    .links-content .card a {
+        margin: auto;
+        
+     }
 
     
 
