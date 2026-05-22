@@ -63,6 +63,9 @@
     height: 100%;
 }
 
+.mobile-menu{
+    background-image: url(/8.jpg);
+}
 
 .about{
     width: 100%;
