@@ -1,6 +1,8 @@
 
 .header{
+    
     height: 20px;
+    border-bottom: 3px solid var(--primary-color);
 }
 .header .nav-links #about {
     color: var(--primary-color);
@@ -18,28 +20,99 @@
 
 }
 
+.header a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+
+
+}
+
+.header .logo img {
+    width: 8%;
+    margin-right: auto;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+
+}
+
+.header a .logo .imbuto{
+    display: flex;
+    gap: 5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-right: auto;
+    position: absolute;
+    left: 3rem;
+}
+
+.header a .imbuto .love{
+    color: var(--primary-color);
+}
+
 
 .hero{
     background-image: url(/2.jpg);
     height: 50vh;
+    display: none;
+}
+
+.hero .motto{
+    height: 100%;
 }
 
 
+.about{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    margin-top: 3rem;
+    height: 80vh;
+    
+}
+
+.about img{
+    width: 50%;
+    height: 100%;
+}
+
+.about .about-content{
+    
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
+}
 
 
+.about .about-content  ul li{
+    list-style: circle;
+}
 
 
 
 @media (max-width:768px) {
 
-    .header .imbuto {
+    .header{
+        height: 30px;
+        padding-bottom: 20px;
+    }
+    .header a .logo .imbuto {
+        display: none;
+        margin-left: -1.3rem;
+    }
+
+    .header .imbuto{
         display: flex;
-        align-items: center;
-        gap: 10px;
         text-transform: uppercase;
         font-weight: bolder;
-        margin-right: 2rem;
-        margin-left: -2rem;
+        position: absolute;
+        left: 13%;
     }
 
     .header .imbuto .love {
@@ -47,9 +120,24 @@
     }
 
     .header .logo img {
-        width: 40%;
+        width: 30%;
+        
+
     }
 
+    .about{
+        margin: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-bottom: 20px;
+    }
+
+    .about img, .about .about-content{
+        width: 100%;
+        
+    }
 }
 
 @media (width:768px) and (height:1024px) {
@@ -107,4 +195,5 @@
     }
 
 }
+
 
