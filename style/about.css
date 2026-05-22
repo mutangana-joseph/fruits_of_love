@@ -89,6 +89,10 @@
     
 }
 
+.about .about-content .card{
+    padding: 30px;
+}
+
 
 .about .about-content  ul li{
     list-style: circle;
@@ -133,11 +137,16 @@
         height: 100vh;
         padding-bottom: 20px;
     }
-
+    .about img{
+        height: auto;
+    }
     .about img, .about .about-content{
         width: 100%;
         
     }
+    
+
+   
 }
 
 @media (width:768px) and (height:1024px) {
