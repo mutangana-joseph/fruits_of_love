@@ -15,6 +15,10 @@ html{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+#about, #activities, #motto, #joinUs, #leaders, #gallery, #members, #mission, #vision, #contact{
+    scroll-margin-top: 70px;
+}
+
 body{
     position: relative;
 }
