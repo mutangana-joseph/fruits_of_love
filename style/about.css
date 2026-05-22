@@ -1,0 +1,110 @@
+
+.header{
+    height: 20px;
+}
+.header .nav-links #about {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.header .nav-links #home {
+    color: black;
+    text-decoration: unset;
+}
+
+.header .imbuto{
+    
+    display: none;
+
+}
+
+
+.hero{
+    background-image: url(/2.jpg);
+    height: 50vh;
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .header .imbuto {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin-right: 2rem;
+        margin-left: -2rem;
+    }
+
+    .header .imbuto .love {
+        color: var(--primary-color);
+    }
+
+    .header .logo img {
+        width: 40%;
+    }
+
+}
+
+@media (width:768px) and (height:1024px) {
+    .header .logo img {
+        width: 100%;
+        
+    }
+
+    .header .nav-links{
+        display: flex;
+    }
+
+    .header .imbuto, .header .show-menu{
+        display: none;
+    }
+
+
+}
+
+@media  (width:540px) and (height:720px){
+    .header .logo img {
+        width: 15%;
+    }
+    
+
+}
+
+@media (width:912px) and (height:1368px) {
+    .header .logo img {
+        width: 15%;
+    }
+
+}
+
+
+
+@media (width:1024px) and (height:1366px) {
+    .header .logo img{
+        width: 15%;
+    }
+
+}
+
+@media (max-width:1024px){
+    .header .logo img {
+            width: 15%;
+        }
+
+
+}
+
+@media (width:344px) and (height:882px) {
+    .header .logo img {
+        width: 35%;
+    }
+
+}
+
