@@ -6,6 +6,7 @@ const mobile_menu = document.getElementById('mobile-menu');
 const menu = document.querySelectorAll('.menu');
 const pcMenu = document.querySelectorAll('.pc-menu');
 const joinCard = document.getElementById('joinCard');
+const main = document.getElementById('main');
 
 //Show and hide Mobile menu function
 function showMenu(){
@@ -30,9 +31,13 @@ function showHide(){
             methods.style.display = 'block';
             mobile_menu.style.display = 'none';
             joinCard.style.display = 'none';
+            main.style.opacity='0.1';
+            
+            
         }
         else {
             methods.style.display = 'none';
+            main.style.opacity = '1';
         }
 
     }
