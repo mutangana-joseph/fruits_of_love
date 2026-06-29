@@ -86,15 +86,25 @@
     
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     overflow-y: auto;
+    align-items: center;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    padding: 10px 0px;
     
 }
 
 .about .about-content .card{
     padding: 20px 30px;
     font-family: 'Courier New', Courier, monospace;
+    background-color: darkmagenta;
+    color: aliceblue;
+    background-color: rgba();
+    width: 85%;
+    border-radius: 10px;
 }
 
 .about .about-content .card .card-content, ul li, h1,h4{
@@ -175,7 +185,7 @@
 }
 
 .about .about-content #motto{
-    background-color: var(--primary-color);
+   
     display: flex;
     flex-direction: column;
     color: white;
@@ -211,7 +221,6 @@
     padding: 10px;
     border-radius: 20px;
     font-size: small;
-    
 }
 
 .about .about-content #leaders .card-content .row img{
@@ -221,7 +230,7 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     padding: 3px;
-    border:1px solid var(--green-color);
+    
 
 }
 
@@ -235,7 +244,16 @@
 
 
 @media (max-width:768px) {
+    body{
+        background-image: url("/2.jpg");
+        background-position: center;
+        background-size: cover;
 
+    }
+    #big-img{
+        height: 10vh;
+        display: none;
+    }
     .header{
         height: 30px;
         padding-bottom: 20px;
@@ -278,6 +296,12 @@
         width: 100%;
         
     }
+        .about .about-content .card{
+            width: 80%;
+            background-color: rgb(184, 8, 157);
+            color: aliceblue;
+        }
+
     
 
    
