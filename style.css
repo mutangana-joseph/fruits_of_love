@@ -247,126 +247,233 @@ a{
 }
 
 
-/* donate-methods section style */
+/* =========================
+   DONATION MODAL
+========================= */
 
-.donate-methods{
-    
-    position: fixed;
-    bottom: 0;
-    z-index: 999;
-    animation: slide 1s ease;
+.donation-modal {
     display: none;
-    width: 100%;
-    background-color: #222;
-    
-    
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    z-index: 9999;
+
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
 }
 
-.donate-methods .head{
-    position: relative;
+
+/* =========================
+   DONATION BOX
+========================= */
+
+.donation-box {
+    width: 100%;
+    max-width: 850px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+    animation: donationAppear 0.25s ease;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.donation-header {
     display: flex;
-    gap: 5px;
-    background-color: var(--secondary-color);
-    color: white;
-    font-weight: bolder;
-    padding: 10px 10px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.donation-header h2 {
+    margin: 0;
+
     font-size: 22px;
 
+    color: #222;
+}
+
+.donation-header p {
+    margin: 5px 0 0;
+
+    font-size: 14px;
+
+    color: #777;
 }
 
 
-.donate-methods .head li i{
-    position: absolute;
-    right: 1rem;
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.donation-close {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3f3f3;
+
+    color: #333;
+
+    font-size: 28px;
+
+    line-height: 1;
+
     cursor: pointer;
-    font-size: 33px;
-}
 
-.donate-methods .head li i:hover, .mobile-menu .head i:hover, .joinUs .head i:hover{
-    animation: spin 2s ease-in-out;
-}
-
-.donate-methods .methods{
-    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 30px;
-    padding: 20px 30px;
 
-    
-   
-}
-
-.donate-methods .methods .account{
-    padding: 6px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: left;
-    box-shadow: 0 1px 8px var(--primary-color);
-    width: 100%;
-   
-    cursor: pointer;
-   
+
+    transition: 0.2s ease;
 }
 
-.donate-methods .methods #momo{
-    display: inline-block;
-    padding: unset;
-    padding: 6px;
+.donation-close:hover {
+    background: #e91e63;
+    color: white;
 }
 
-.donate-methods .methods #momo a:hover{
-    background-color: rgba(255, 217, 0, 0.553);
+
+/* =========================
+   CONTENT
+========================= */
+
+.donation-content {
+    padding: 25px;
 }
 
-.donate-methods .methods #momo a{
-    display: block;
-    background-color: gold;
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bolder;
-    
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.donation-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
 }
 
-.donate-methods .methods #lolc{
-    background-color: aqua;
-    font-weight: bolder;
-}
 
-.donate-methods .methods #lolc:hover{
-    background-color: rgba(0, 255, 255, 0.747);
-}
+/* =========================
+   INDIVIDUAL CARD
+========================= */
 
-.donate-methods .methods-details{
-    background-color: blanchedalmond;
-    color: black;
-    
+.donation-card {
+    text-decoration: none;
+
+    background: white;
+
+    border: 1px solid #e7e7e7;
+
+    border-radius: 14px;
+
+    min-height: 105px;
+
     padding: 20px;
-    font-weight: bolder;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
-    
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
 }
 
-.donate-methods .methods-details ul{
-    margin: 0.5rem;
-    
+
+/* =========================
+   AMOUNT
+========================= */
+
+.donation-amount {
+    font-size: 23px;
+
+    font-weight: 700;
+
+    color: #222;
 }
 
-.donate-methods .methods-details ul li{
-    background-color: white;
-    color: var(--secondary-color);
-    white-space: nowrap;
-    padding: 20px 30px;
-    border: var(--secondary-color) solid 1px;
+
+/* =========================
+   PAYMENT METHOD
+========================= */
+
+.donation-method {
+    margin-top: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #e91e63;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.donation-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #e91e63;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   MODAL ANIMATION
+========================= */
+
+@keyframes donationAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 
 }
+
+
+
 
 
 
@@ -1254,4 +1361,40 @@ a{
         margin-left: 1rem;
     }
     
+}
+
+@media (max-width: 650px) {
+
+    .donation-modal {
+        padding: 12px;
+    }
+
+    .donation-header {
+        padding: 18px;
+    }
+
+    .donation-header h2 {
+        font-size: 19px;
+    }
+
+    .donation-content {
+        padding: 18px;
+    }
+
+    .donation-cards {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .donation-card {
+        min-height: 90px;
+
+        padding: 15px 10px;
+    }
+
+    .donation-amount {
+        font-size: 19px;
+    }
+
 }

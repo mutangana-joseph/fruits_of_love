@@ -28,16 +28,16 @@ function showHide(){
 
     if(donate){
         if (methods.style.display === 'none' || methods.style.display === '') {
-            methods.style.display = 'block';
+            methods.style.display = 'flex';
             mobile_menu.style.display = 'none';
             joinCard.style.display = 'none';
-            main.style.opacity='0.1';
+            
             
             
         }
         else {
             methods.style.display = 'none';
-            main.style.opacity = '1';
+            
         }
 
     }
@@ -81,3 +81,40 @@ function showJoinCard(){
         joinCard.style.display = 'none';
     }
 }
+
+
+//Donation model
+
+const amounts = [
+    1500,
+    2000,
+    5000,
+    10000,
+    15000,
+    20000
+];
+
+const donationCards = document.getElementById("donationCards");
+
+
+amounts.forEach(function (amount) {
+
+    const card = document.createElement("a");
+
+    card.classList.add("donation-card");
+
+    card.href = `tel:*182*8*1*1391480*${amount}%23`;
+
+    card.innerHTML = `
+        <span class="donation-amount">
+            ${amount.toLocaleString()} FRW
+        </span>
+
+        <span class="donation-method">
+            MoMo Pay
+        </span>
+    `;
+
+    donationCards.appendChild(card);
+
+});
