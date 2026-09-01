@@ -454,24 +454,6 @@ a{
 }
 
 
-/* =========================
-   MODAL ANIMATION
-========================= */
-
-@keyframes donationAppear {
-
-    from {
-        opacity: 0;
-        transform: translateY(15px) scale(0.98);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-
-}
-
 
 
 
@@ -1110,20 +1092,20 @@ a{
     position: fixed;
     bottom: 0;
     z-index: 8;
-    background-color: #222;
+    background-color: white;
     width: 100%;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: slide 1.5s ease-in-out;
+    animation: slide .5s ease-in-out;
 
     
 }
 
 .joinUs .head{
     position: relative;
-    background-color: white;
+    background-color: #D81B60;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1131,7 +1113,7 @@ a{
     font-size: x-large;
     padding: 10px;
     margin:0 20px;
-    color: var(--primary-color);
+    color: white;
     font-weight: bolder;
 }
 
@@ -1139,18 +1121,31 @@ a{
     margin-left: 3rem;
 }
 
-.joinUs .head #closeCard{
+.joinUs .head #close{
+    background-color: #E91E63;
+    
     margin-left: auto;
     margin-right: 3rem;
     cursor: pointer;
-    font-size: 40px;
-    color: #222;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
 
+}
+
+.joinUs .head #close:hover{
+    background-color: #E91E63;
+    color: white;
 }
 
 .joinUs .head  li i{
     position: relative;
-    color: var(--primary-color);
+    color: white;
     margin-right: auto;
 }
 
@@ -1207,7 +1202,7 @@ a{
 
 @keyframes slide {
     0% {
-        transform: translateY(90px);
+        transform: translateY(10px);
     }
 }
 
